@@ -1,6 +1,6 @@
 defmodule TakeANumber do
   def start() do
-    spawn(fn -> loop() end)
+    spawn(&loop/0)
   end
 
   defp loop(state \\ 0) do
